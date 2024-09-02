@@ -1,24 +1,37 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Node modules
+node_modules/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Local environment files
+.env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*.local
 
+# Vite cache
+.vite/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-/.idea/
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# IDE specific
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Build output
+dist/
+out/
+build/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
