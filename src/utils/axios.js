@@ -1,9 +1,10 @@
 // src/axiosSetup.js
 
 import axios from 'axios';
+import { BaseApi } from 'store/api/constant';
 
 const axiosServices = axios.create({ 
-    baseURL: import.meta.env.VITE_APP_BASE_API || 'http://localhost:7005/api' 
+    baseURL: import.meta.env.VITE_APP_BASE_API || 'https://adminpanal-backend.vercel.app/api' 
 });
 
 // Request Interceptor

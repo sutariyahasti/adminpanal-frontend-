@@ -62,6 +62,7 @@ import React, { useState } from 'react';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import './style.css'
+import { BaseApi } from 'store/api/constant';
 
 // const images = [
 //     "https://media.istockphoto.com/id/2161928480/photo/lahaina-pioneer-mill-lahainaluna-rd-burn-zone-360-degree-june-2024.jpg?s=2048x2048&w=is&k=20&c=D5c5AA-5pqtK3HwbDibJ-pxomWhXGcmhE8t3oSY3d8Y=",
@@ -89,7 +90,7 @@ function SphereViewer({images}) {
             <a-scene className="a-box">
                 <a-assets>
                     {images.map((src, index) => (
-                        <img key={`sky-${index}`} id={`sky-${index}`} src={`http://localhost:7005/${src}`} />
+                        <img key={`sky-${index}`} id={`sky-${index}`} src={src} />
                     ))}
                 </a-assets>
                 <a-sky src={`#sky-${currentImageIndex}`} rotation="0 0 0"></a-sky>
