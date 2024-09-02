@@ -1,0 +1,58 @@
+.main-box
+{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    z-index: 9999;
+    background: white;
+    box-shadow: 0 2px 14px 0 rgb(32 40 45 / 8%);
+}
+.view-img-box {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjusting a-scene to fit within the container */
+a-scene.fullscreen .a-canvas {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    position:absolute !important;
+    z-index: 100 !important;
+}
+
+.buttonContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 400;
+}
+
+.btn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgba(34 34 34 / 63%);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100%;
+    margin: 0 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
