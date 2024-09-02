@@ -65,7 +65,7 @@ const AuthLogin = ({ ...others }) => {
         if (response.status === 200) {
           const { token } = response.data;
           localStorage.setItem('serviceToken', token);
-          window.location.href = '/free/dashboard/default';
+          window.location.href = '/dashboard/default';
         }
       })
       

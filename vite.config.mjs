@@ -7,7 +7,7 @@ import jsconfigPaths from 'vite-jsconfig-paths';
 export default defineConfig({
   plugins: [react(), jsconfigPaths()],
   // Adjust the base path if necessary
-  base: process.env.VERCEL_ENV === 'production' ? '/free/' : '/',
+  base: process.env.VERCEL_ENV === 'production' ? '/' : '/',
   define: {
     global: 'window'
   },

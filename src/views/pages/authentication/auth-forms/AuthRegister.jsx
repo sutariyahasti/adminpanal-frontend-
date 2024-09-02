@@ -111,7 +111,7 @@ const AuthRegister = ({ ...others }) => {
       });
       if (response.data.success) {
      setOtpDialogOpen(false)
-     window.location.href = '/free/pages/login/login';
+     window.location.href = '/pages/login/login';
       }
     } catch (error) {
       if (error.response && error.response.data) {
