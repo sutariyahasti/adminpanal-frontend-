@@ -20,7 +20,7 @@ export default defineConfig({
   // The following server options are for local development and can be omitted for Vercel deployment
   server: {
     open: true,
-    port: 3000,
+    port: process.env.PORT,
   },
   preview: {
     open: true,
